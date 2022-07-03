@@ -72,7 +72,6 @@ module.exports = arus = async (arus, m, chatUpdate, store) => {
         const mentionByTag = m.mtype == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.mentionedJid : []
        const mentionByReply = m.mtype == "extendedTextMessage" && m.message.extendedTextMessage.contextInfo != null ? m.message.extendedTextMessage.contextInfo.participant || "" : ""
         //db fetch
-if(icmd&&!isGroup) return m.reply("You cannot use any command in dm")
 
 if (icmd) {	
 
